@@ -49,7 +49,7 @@ keras_regressor = KerasRegressor(build_fn=create_model, verbose=0)
 # Define hyperparameters to search
 param_grid = {
     'learning_rate': [0.01],
-    'hidden_layer_sizes': [(200, 50, 10)],
+    'hidden_layer_sizes': [(100,50,10), (200, 50, 10), (500, 250, 100)],
     'activation': ['relu', 'tanh', 'sigmoid']
 }
 
